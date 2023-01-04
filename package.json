@@ -6,7 +6,9 @@
   "scripts": {
     "start": "nodemon backend/server.js",
     "client": "npm start --prefix frontend",
-    "dev": "concurrently \"npm start\"  \"npm run client\" "
+    "dev": "concurrently \"npm start\"  \"npm run client\" ",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [
     "cloning"
